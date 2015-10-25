@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oxygen", sans-serif;
+}
+body {
+  margin: 3px;
+}
+body>header, body>footer {
+  background-color: grey;
+  padding: 3px 0px;
+  /*
+  padding numbers go clockwise starting at 12
+  If you only use 2, it will define top/bottom and left/right*/
+  margin-bottom: 10px;
+  width: 100%;
+  display: table;
+}
+/*
+> means its a direct child of something
+a space means it's anywhere inside
+*/
+body>header>nav>ul, body>footer>nav>ul {
+  list-style: none;
+  display: table-row;
+  padding: 0;
+}
+body>header li, body>footer li {
+  color:white;
+  margin: 0 30px;
+  text-align: center;
+  display: table-cell;
+}
+img.sectionheader {
+  max-width: 100%;
+  max-height: 100%;
+}
+/*"dot" names are for classes*/
+.maincontent {
+  width:75%;
+}
+.top img {
+  float:left;
+}
+.spotlight img {
+  width: 100%;
+}
+.maincontent h1 {
+  padding-left: 5px;
+}
+.maincontent p {
+  padding-left: 10px;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+aside {
+  float:right;
+  padding-left:5px;
+  width:calc( 25% - 5px);
+}
+aside h2 {
+  font-size: 1.5em;
+}
+aside ul {
+  list-style:none;
+  background-color:lightgray;
+}
+aside li {
+  padding: 10px;
+}
+.spotlight h2 {
+  padding: 15px 0 5px 0;
+}
+
+.spotlight article {
+  width: calc(33.33% - 17px);
+  margin-right: 5px;
+  display: inline;
+  float: left;
+  text-align: justify;
+  padding: 5px;
+  border-style: solid;
+  border-width:1px;
+}
+footer {
+  padding: 1em;
+}
+
+footer.bottom {
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+#logo{
+  float:left;
+}
+#company-name{
+  float:left;
+  text-align:left;
+  width:20em;
+  font-size: 1.5em;
+  padding:18px;
+}
